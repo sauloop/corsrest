@@ -18,7 +18,7 @@ public class CorsrestApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/greeting-javaconfig").allowedOrigins("https://corsrest.herokuapp.com");
+				registry.addMapping("/greeting-javaconfig").allowedOrigins("https://corsrest.herokuapp.com:9000");
 			}
 		};
 	}
